@@ -1,33 +1,30 @@
-zabbixProxy
-Repositório com scripts e recursos para implantação rápida do Zabbix Proxy utilizando Docker Compose, facilitando o monitoramento distribuído em ambientes com múltiplas redes e localidades.
+# zabbixProxy
 
-Visão Geral
+Repositório com scripts e recursos para implantação rápida do **Zabbix Proxy** utilizando Docker Compose, facilitando o monitoramento distribuído em ambientes com múltiplas redes e localidades.
+
+## Visão Geral
+
 Este projeto automatiza a instalação, configuração e atualização do Zabbix Proxy, permitindo a integração com ambientes Zabbix Server para monitoramento remoto de hosts de forma segura e eficiente.
 
-Principais Recursos
-Deploy rápido via Docker Compose
+## Principais Recursos
 
-Scripts para setup, atualização e gerenciamento
+- Deploy rápido via Docker Compose
+- Scripts para setup, atualização e gerenciamento
+- Compatível com bancos MySQL/MariaDB
+- Estrutura personalizável por variáveis de ambiente
+- Exemplo de service para uso em sistemas Linux com systemd
 
-Compatível com bancos MySQL/MariaDB
+## Pré-requisitos
 
-Estrutura personalizável por variáveis de ambiente
+- Docker instalado
+- Docker Compose instalado
+- Acesso ao repositório do Zabbix Proxy Docker
 
-Exemplo de service para uso em sistemas Linux com systemd
+## Instalação
 
-Pré-requisitos
-Docker instalado
-
-Docker Compose instalado
-
-Acesso ao repositório do Zabbix Proxy Docker
-
-Instalação
 Clone o repositório:
 
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/christian-jorge/zabbixProxy.git
 cd zabbixProxy
 Copie o arquivo de exemplo de variáveis e edite conforme seu ambiente:
@@ -37,7 +34,7 @@ Copiar
 Editar
 cp .env.example .env
 nano .env
-Edite as variáveis de conexão com banco, endereço do Zabbix Server, e nome do proxy.
+Edite as variáveis de conexão com banco, endereço do Zabbix Server e nome do proxy.
 
 Uso
 Para subir o proxy:
