@@ -3,6 +3,8 @@ set -euo pipefail
 
 # --- 0. Variáveis interativas ---
 read -s -p "Senha root do MySQL: " MYSQL_ROOT_PASSWORD
+echo
+
 read -p "Nome do banco MySQL: " MYSQL_DATABASE
 MYSQL_DATABASE=${MYSQL_DATABASE:-proxy_db}
 
@@ -52,7 +54,6 @@ MYSQL_DATABASE=${MYSQL_DATABASE}
 MYSQL_USER=${MYSQL_USER}
 MYSQL_PASSWORD=${MYSQL_PASSWORD}
 ZBX_SERVER_HOST=${ZBX_SERVER_HOST}
-ZBX_SERVER_PORT=${ZBX_SERVER_PORT}
 ZBX_HOSTNAME=${ZBX_HOSTNAME}
 EOF
 chmod 600 .env
@@ -104,7 +105,6 @@ services:
       MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
       MYSQL_DATABASE: "${MYSQL_DATABASE}"
       ZBX_SERVER_HOST: "${ZBX_SERVER_HOST}"
-      ZBX_SERVER_PORT: "${ZBX_SERVER_PORT}"
       ZBX_HOSTNAME:    "${ZBX_HOSTNAME}"
       ZBX_PROXYMODE:   0
     ports:
