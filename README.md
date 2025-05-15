@@ -1,4 +1,4 @@
-# zabbixProxy
+# ZabbixProxy
 
 Repositório com scripts e recursos para implantação rápida do **Zabbix Proxy** utilizando Docker Compose, facilitando o monitoramento distribuído em ambientes com múltiplas redes e localidades.
 
