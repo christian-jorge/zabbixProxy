@@ -41,8 +41,8 @@ cd zabbixProxy
 ### 2. Execute o script de instalação
 
 ```bash
-chmod +x scripts/setup.sh
-./scripts/setup.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 **Durante a execução do script, você será guiado por um assistente interativo que irá solicitar os principais dados de configuração, como:**
